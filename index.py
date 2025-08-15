@@ -10,7 +10,7 @@ def add_student():
 
     avarage = sum(score_list) / len(score_list)
 
-    with open("Fill_NAME", "a") as f:
+    with open(Fill_NAME, "a") as f:
         f.write(f"{name}: {",".join(map(str, score_list))}:{avarage:.2f}\n") # change the int to str with .join
 
         print(f"{name} Your Score {avarage:.2f}") # .2f is float
@@ -19,7 +19,7 @@ def viwe_student():
         print(f"No student data not foun")
         return
     
-    with open(Fill_NAME, "r") as f:
+    with open(Fill_NAME, 'r') as f:
         lines = f.readlines()
 
     print("\n Student Recourd")
@@ -40,5 +40,8 @@ def mnue():
         elif choice == "2":
             viwe_student()
         elif choice == "3":
-            print("Goodbye")    
+            print("Goodbye")
+            break
+        else:
+            print("Invalid choice, try again!")
 mnue()        

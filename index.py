@@ -40,5 +40,5 @@ def mnue():
         elif choice == "2":
             viwe_student()
         elif choice == "3":
-            print("Gude bye")    
+            print("Goodbye")    
 mnue()        

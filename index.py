@@ -31,8 +31,8 @@ def viwe_student():
 def mnue():
     while True:
         print("\n 1, Add Student")
-        print("\n 2,View Student")
-        print("\n 3,Exit")
+        print("\n 2, View Student")
+        print("\n 3, Exit")
         choice = input("Choice Your: ")
 
         if choice == "1":
